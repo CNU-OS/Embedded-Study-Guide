@@ -14,6 +14,17 @@ export default defineConfig({
     nav: [
     ],
 
+    search: { 
+      provider: 'local'
+    }, 
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short', // 可选值full、long、medium、short
+        timeStyle: 'medium' // 可选值full、long、medium、short
+      },
+    },
+    
     sidebar: generateSidebar({
       /*
        * For detailed instructions, see the links below:
